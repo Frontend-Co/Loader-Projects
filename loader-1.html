@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <!-- ============= css styling start here =============== -->
+    <style>
+        body{
+            background: #3a3b3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 300px;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            background: #3a3b3c;
+            border-radius: 50%;
+            border-top: 10px solid rgba(155, 215, 210, 0.8);
+            animation: Loader 3s linear infinite;
+        }
+        @keyframes Loader{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .line0{
+            width: 270px;
+            height: 270px;
+            border-color: aqua;
+        }
+        .line1{
+            width: 240px;
+            height: 240px;
+            border-color: orangered;
+        }
+        .line2{
+            width: 210px;
+            height: 210px;
+            border-color: pink;
+        }
+        .line3{
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="circle line0">
+    <div class="circle line1">
+    <div class="circle line2">
+    <div class="circle line3">
+
+    </div>
+</body>
+</html>
